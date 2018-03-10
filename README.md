@@ -5,9 +5,17 @@ Currently, it only support to crawl the URJC web page to donwload subject exams 
 
 # Webcrawler usage instructions
 
+Clone this resitory and install node dependencies:
+
+<code>
+$ npm install
+</code>
+
 Open three terminals and execute the following commands:
 
 ## Start selenium server
+
+To allow node code to start Chrome browser to crawl examns information:
 
 <code>
 $ cd webcrawler
