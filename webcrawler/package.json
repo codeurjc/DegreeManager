@@ -1,0 +1,30 @@
+{
+  "name": "degreemanager-webcrawler",
+  "version": "0.0.1",
+  "description": "The web crawler is a module of DegreeManager in charge of downloading degree information from the official university web page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeurjc/DegreeManager/webcrawler"
+  },
+  "keywords": [
+    "web",
+    "crawler",
+    "degree",
+    "manager"
+  ],
+  "author": "Micael Gallego (micael.gallego@urjc.es)",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^5.0.0",
+    "@types/webdriverio": "^4.8.7",
+    "fs-extra": "^5.0.0",
+    "webdriverio": "^4.9.11"
+  }
+}
