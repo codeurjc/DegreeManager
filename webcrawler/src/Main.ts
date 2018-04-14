@@ -95,7 +95,7 @@ async function extractCampusInformation(
     console.log("Degree selected: " + degreeName);
 
     await browser.element("#convocatoria").selectByVisibleText("Todas");
-    await sleep(4000);
+    await sleep(8000);
 
     console.log(degreeName);
 
@@ -229,14 +229,14 @@ async function loadExamsFile() {
 
 (async () => {
   try {
-    await extract();
-    saveExamsFile();
-    //await loadExamsFile();
-    //groupBySubject(exam => exam.convocation === "Junio");
+    // await extract();
+    // saveExamsFile();
+    await loadExamsFile();
+    //groupBySubject(exam => exam.convocation === "Mayo");
     groupByDate(
       exam =>
         exam.convocation ===
-        "Junio" /* && exam.subject === "SISTEMAS DISTRIBUIDOS"*/
+        "Mayo" /* && exam.subject === "SISTEMAS DISTRIBUIDOS"*/
     );
   } catch (e) {
     console.error(e);
